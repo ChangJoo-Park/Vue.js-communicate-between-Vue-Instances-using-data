@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://unpkg.com/vue@2.1.6/dist/vue.js"></script>
+</head>
+<body>
+	<button id="plus">+</button> | <button id="minus">-</button>
+	<div id="app-1">
+		<button @click="plusCount()">+</button>
+		{{centralData}}
+	</div>
+	<div id="app-2">
+		<button @click="minusCount()">-</button>
+		{{centralData}}
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
