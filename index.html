@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<script src="https://unpkg.com/vue@2.1.6/dist/vue.js"></script>
-</head>
-<body>
-	<button id="plus">+</button> | <button id="minus">-</button>
-	<div id="app-1">
-		<button @click="plusCount()">+</button>
-		{{centralData}}
-	</div>
-	<div id="app-2">
-		<button @click="minusCount()">-</button>
-		{{centralData}}
-	</div>
-	<script src="app.js"></script>
-</body>
+
+  <head>
+    <script src="https://unpkg.com/vue@2.1.6/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div>
+      <h1>Browser</h1>
+      <button id="plus">+</button> |
+      <button id="minus">-</button>
+    </div>
+    <!-- App 1 -->
+    <div id="app-1" class="box">
+      <h1>App First</h1>
+      <button @click="plusCount()">+</button>
+      <button @click="openPopup()">OPEN</button>
+      <div>
+        Count : {{centralData.count}}
+      </div>
+    </div>
+    <!-- APP 2 -->
+    <div id="app-2" class="box">
+      <h1>App Second</h1>
+      <button @click="minusCount()">-</button>
+      <div>
+        Count : {{centralData.count}}
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="app1.js"></script>
+    <script src="app2.js"></script>
+  </body>
+
 </html>
+
